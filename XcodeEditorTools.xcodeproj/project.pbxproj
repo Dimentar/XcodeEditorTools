@@ -7,19 +7,95 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A209C1F2846291900E02944 /* StringCaseCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A209C1E2846291900E02944 /* StringCaseCommand.swift */; };
+		2A5AEDA828363D1F00E0BD18 /* InitGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5AEDA628363D1F00E0BD18 /* InitGenerator.swift */; };
+		2A5AEDA928363D1F00E0BD18 /* InitVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5AEDA728363D1F00E0BD18 /* InitVariable.swift */; };
+		2A5AEDAF2836430700E0BD18 /* SortSelectedLinesCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5AEDAE2836430700E0BD18 /* SortSelectedLinesCommand.swift */; };
+		2A5AEDB42836434800E0BD18 /* LinesSequenceBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5AEDB12836434800E0BD18 /* LinesSequenceBuilder.swift */; };
+		2A5AEDB52836434800E0BD18 /* LinesSorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5AEDB22836434800E0BD18 /* LinesSorter.swift */; };
+		2A5AEDB62836434800E0BD18 /* Prettifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5AEDB32836434800E0BD18 /* Prettifier.swift */; };
+		2A5AEDBF2836442700E0BD18 /* Array+DuplicatesElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5AEDBB2836442700E0BD18 /* Array+DuplicatesElements.swift */; };
+		2A5AEDC02836442700E0BD18 /* NSRange+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5AEDBC2836442700E0BD18 /* NSRange+Ext.swift */; };
+		2A5AEDC12836442700E0BD18 /* CountableClosedRange+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5AEDBD2836442700E0BD18 /* CountableClosedRange+Ext.swift */; };
+		2A5AEDC22836442700E0BD18 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5AEDBE2836442700E0BD18 /* String+Ext.swift */; };
+		2A5AEDC4283645C500E0BD18 /* InitGeneratorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5AEDC3283645C500E0BD18 /* InitGeneratorCommand.swift */; };
 		2A825E052836254100639F0B /* XcodeEditorToolsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A825E042836254100639F0B /* XcodeEditorToolsApp.swift */; };
 		2A825E072836254100639F0B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A825E062836254100639F0B /* ContentView.swift */; };
 		2A825E092836254400639F0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A825E082836254400639F0B /* Assets.xcassets */; };
 		2A825E0C2836254400639F0B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A825E0B2836254400639F0B /* Preview Assets.xcassets */; };
+		2A825E1A2836259C00639F0B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A825E192836259C00639F0B /* Cocoa.framework */; };
+		2A825E1F2836259C00639F0B /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A825E1E2836259C00639F0B /* SourceEditorExtension.swift */; };
+		2A825E212836259C00639F0B /* DuplicateSelectedLinesCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A825E202836259C00639F0B /* DuplicateSelectedLinesCommand.swift */; };
+		2A825E262836259C00639F0B /* MyTools.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2A825E172836259C00639F0B /* MyTools.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2A825E2B283625B300639F0B /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A825E1B2836259C00639F0B /* XcodeKit.framework */; };
+		2A825E2C283625B300639F0B /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2A825E1B2836259C00639F0B /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2A825E3028362E7900639F0B /* SelectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A825E2F28362E7900639F0B /* SelectionType.swift */; };
+		2A909890283E49F3006552E0 /* SplitMultiLinesCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A90988F283E49F3006552E0 /* SplitMultiLinesCommand.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2A825E242836259C00639F0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A825DF92836254100639F0B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A825E162836259C00639F0B;
+			remoteInfo = Tools;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2A825E2A2836259C00639F0B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2A825E262836259C00639F0B /* MyTools.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A825E2D283625B300639F0B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2A825E2C283625B300639F0B /* XcodeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2A209C1E2846291900E02944 /* StringCaseCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringCaseCommand.swift; sourceTree = "<group>"; };
+		2A5AEDA628363D1F00E0BD18 /* InitGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitGenerator.swift; sourceTree = "<group>"; };
+		2A5AEDA728363D1F00E0BD18 /* InitVariable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitVariable.swift; sourceTree = "<group>"; };
+		2A5AEDAE2836430700E0BD18 /* SortSelectedLinesCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortSelectedLinesCommand.swift; sourceTree = "<group>"; };
+		2A5AEDB12836434800E0BD18 /* LinesSequenceBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinesSequenceBuilder.swift; sourceTree = "<group>"; };
+		2A5AEDB22836434800E0BD18 /* LinesSorter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinesSorter.swift; sourceTree = "<group>"; };
+		2A5AEDB32836434800E0BD18 /* Prettifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prettifier.swift; sourceTree = "<group>"; };
+		2A5AEDBB2836442700E0BD18 /* Array+DuplicatesElements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+DuplicatesElements.swift"; sourceTree = "<group>"; };
+		2A5AEDBC2836442700E0BD18 /* NSRange+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSRange+Ext.swift"; sourceTree = "<group>"; };
+		2A5AEDBD2836442700E0BD18 /* CountableClosedRange+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CountableClosedRange+Ext.swift"; sourceTree = "<group>"; };
+		2A5AEDBE2836442700E0BD18 /* String+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		2A5AEDC3283645C500E0BD18 /* InitGeneratorCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitGeneratorCommand.swift; sourceTree = "<group>"; };
 		2A825E012836254100639F0B /* XcodeEditorTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodeEditorTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A825E042836254100639F0B /* XcodeEditorToolsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeEditorToolsApp.swift; sourceTree = "<group>"; };
 		2A825E062836254100639F0B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2A825E082836254400639F0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A825E0B2836254400639F0B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2A825E0D2836254400639F0B /* XcodeEditorTools.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XcodeEditorTools.entitlements; sourceTree = "<group>"; };
+		2A825E172836259C00639F0B /* MyTools.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyTools.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A825E192836259C00639F0B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		2A825E1B2836259C00639F0B /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
+		2A825E1E2836259C00639F0B /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		2A825E202836259C00639F0B /* DuplicateSelectedLinesCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuplicateSelectedLinesCommand.swift; sourceTree = "<group>"; };
+		2A825E222836259C00639F0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A825E232836259C00639F0B /* MyTools.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyTools.entitlements; sourceTree = "<group>"; };
+		2A825E2F28362E7900639F0B /* SelectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionType.swift; sourceTree = "<group>"; };
+		2A90988F283E49F3006552E0 /* SplitMultiLinesCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitMultiLinesCommand.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,13 +106,65 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2A825E142836259C00639F0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A825E1A2836259C00639F0B /* Cocoa.framework in Frameworks */,
+				2A825E2B283625B300639F0B /* XcodeKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A5AEDB02836430E00E0BD18 /* SortSelectedLines */ = {
+			isa = PBXGroup;
+			children = (
+				2A5AEDAE2836430700E0BD18 /* SortSelectedLinesCommand.swift */,
+				2A5AEDB12836434800E0BD18 /* LinesSequenceBuilder.swift */,
+				2A5AEDB22836434800E0BD18 /* LinesSorter.swift */,
+				2A5AEDB32836434800E0BD18 /* Prettifier.swift */,
+			);
+			path = SortSelectedLines;
+			sourceTree = "<group>";
+		};
+		2A5AEDB9283643E600E0BD18 /* InitGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				2A5AEDC3283645C500E0BD18 /* InitGeneratorCommand.swift */,
+				2A5AEDA628363D1F00E0BD18 /* InitGenerator.swift */,
+				2A5AEDA728363D1F00E0BD18 /* InitVariable.swift */,
+			);
+			path = InitGenerator;
+			sourceTree = "<group>";
+		};
+		2A5AEDBA2836441700E0BD18 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2A5AEDBB2836442700E0BD18 /* Array+DuplicatesElements.swift */,
+				2A5AEDBD2836442700E0BD18 /* CountableClosedRange+Ext.swift */,
+				2A5AEDBC2836442700E0BD18 /* NSRange+Ext.swift */,
+				2A5AEDBE2836442700E0BD18 /* String+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2A5AEDC52836471E00E0BD18 /* DuplicateSelectedLines */ = {
+			isa = PBXGroup;
+			children = (
+				2A825E202836259C00639F0B /* DuplicateSelectedLinesCommand.swift */,
+				2A825E2F28362E7900639F0B /* SelectionType.swift */,
+			);
+			path = DuplicateSelectedLines;
+			sourceTree = "<group>";
+		};
 		2A825DF82836254100639F0B = {
 			isa = PBXGroup;
 			children = (
 				2A825E032836254100639F0B /* XcodeEditorTools */,
+				2A825E1D2836259C00639F0B /* MyTools */,
+				2A825E182836259C00639F0B /* Frameworks */,
 				2A825E022836254100639F0B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				2A825E012836254100639F0B /* XcodeEditorTools.app */,
+				2A825E172836259C00639F0B /* MyTools.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,6 +198,31 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		2A825E182836259C00639F0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A825E192836259C00639F0B /* Cocoa.framework */,
+				2A825E1B2836259C00639F0B /* XcodeKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2A825E1D2836259C00639F0B /* MyTools */ = {
+			isa = PBXGroup;
+			children = (
+				2A825E1E2836259C00639F0B /* SourceEditorExtension.swift */,
+				2A5AEDC52836471E00E0BD18 /* DuplicateSelectedLines */,
+				2A5AEDBA2836441700E0BD18 /* Extensions */,
+				2A5AEDB9283643E600E0BD18 /* InitGenerator */,
+				2A5AEDB02836430E00E0BD18 /* SortSelectedLines */,
+				2A90988F283E49F3006552E0 /* SplitMultiLinesCommand.swift */,
+				2A209C1E2846291900E02944 /* StringCaseCommand.swift */,
+				2A825E222836259C00639F0B /* Info.plist */,
+				2A825E232836259C00639F0B /* MyTools.entitlements */,
+			);
+			path = MyTools;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,15 +233,35 @@
 				2A825DFD2836254100639F0B /* Sources */,
 				2A825DFE2836254100639F0B /* Frameworks */,
 				2A825DFF2836254100639F0B /* Resources */,
+				2A825E2A2836259C00639F0B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2A825E252836259C00639F0B /* PBXTargetDependency */,
 			);
 			name = XcodeEditorTools;
 			productName = XcodeEditorTools;
 			productReference = 2A825E012836254100639F0B /* XcodeEditorTools.app */;
 			productType = "com.apple.product-type.application";
+		};
+		2A825E162836259C00639F0B /* MyTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A825E272836259C00639F0B /* Build configuration list for PBXNativeTarget "MyTools" */;
+			buildPhases = (
+				2A825E132836259C00639F0B /* Sources */,
+				2A825E142836259C00639F0B /* Frameworks */,
+				2A825E152836259C00639F0B /* Resources */,
+				2A825E2D283625B300639F0B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyTools;
+			productName = Tools;
+			productReference = 2A825E172836259C00639F0B /* MyTools.appex */;
+			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +274,9 @@
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					2A825E002836254100639F0B = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					2A825E162836259C00639F0B = {
 						CreatedOnToolsVersion = 13.4;
 					};
 				};
@@ -118,6 +295,7 @@
 			projectRoot = "";
 			targets = (
 				2A825E002836254100639F0B /* XcodeEditorTools */,
+				2A825E162836259C00639F0B /* MyTools */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +307,13 @@
 			files = (
 				2A825E0C2836254400639F0B /* Preview Assets.xcassets in Resources */,
 				2A825E092836254400639F0B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A825E152836259C00639F0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +329,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2A825E132836259C00639F0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A825E1F2836259C00639F0B /* SourceEditorExtension.swift in Sources */,
+				2A5AEDA928363D1F00E0BD18 /* InitVariable.swift in Sources */,
+				2A5AEDBF2836442700E0BD18 /* Array+DuplicatesElements.swift in Sources */,
+				2A909890283E49F3006552E0 /* SplitMultiLinesCommand.swift in Sources */,
+				2A5AEDC22836442700E0BD18 /* String+Ext.swift in Sources */,
+				2A5AEDB42836434800E0BD18 /* LinesSequenceBuilder.swift in Sources */,
+				2A5AEDC4283645C500E0BD18 /* InitGeneratorCommand.swift in Sources */,
+				2A209C1F2846291900E02944 /* StringCaseCommand.swift in Sources */,
+				2A5AEDAF2836430700E0BD18 /* SortSelectedLinesCommand.swift in Sources */,
+				2A5AEDC12836442700E0BD18 /* CountableClosedRange+Ext.swift in Sources */,
+				2A825E3028362E7900639F0B /* SelectionType.swift in Sources */,
+				2A5AEDB62836434800E0BD18 /* Prettifier.swift in Sources */,
+				2A5AEDA828363D1F00E0BD18 /* InitGenerator.swift in Sources */,
+				2A5AEDC02836442700E0BD18 /* NSRange+Ext.swift in Sources */,
+				2A5AEDB52836434800E0BD18 /* LinesSorter.swift in Sources */,
+				2A825E212836259C00639F0B /* DuplicateSelectedLinesCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A825E252836259C00639F0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A825E162836259C00639F0B /* MyTools */;
+			targetProxy = 2A825E242836259C00639F0B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2A825E0E2836254400639F0B /* Debug */ = {
@@ -263,6 +479,7 @@
 		2A825E112836254400639F0B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = XcodeEditorTools/XcodeEditorTools.entitlements;
@@ -290,6 +507,7 @@
 		2A825E122836254400639F0B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = XcodeEditorTools/XcodeEditorTools.entitlements;
@@ -314,6 +532,60 @@
 			};
 			name = Release;
 		};
+		2A825E282836259C00639F0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MyTools/MyTools.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FYE3227M67;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyTools/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyTools;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.alex.XcodeEditorTools.MyTools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2A825E292836259C00639F0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MyTools/MyTools.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FYE3227M67;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyTools/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyTools;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.alex.XcodeEditorTools.MyTools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -331,6 +603,15 @@
 			buildConfigurations = (
 				2A825E112836254400639F0B /* Debug */,
 				2A825E122836254400639F0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A825E272836259C00639F0B /* Build configuration list for PBXNativeTarget "MyTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A825E282836259C00639F0B /* Debug */,
+				2A825E292836259C00639F0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
