@@ -43,6 +43,7 @@ class StringCaseCommand: NSObject, XCSourceEditorCommand {
 
 // sake_case
 extension String {
+    private var specialChar: String { "<>" }
     func toSnakeCase(lower: Bool = true) -> String {
         let acronymPattern = "([A-Z]+)([A-Z][a-z]|[0-9])"
         let fullWordsPattern = "([a-z])([A-Z]|[0-9])"
@@ -50,8 +51,9 @@ extension String {
         let processed = processCamelCaseRegex(pattern: acronymPattern)?
             .processCamelCaseRegex(pattern: fullWordsPattern)?
             .processCamelCaseRegex(pattern: digitsFirstPattern)?
-            .replacingOccurrences(of: "-", with: "")
-            .replacingOccurrences(of: "__", with: "_")
+            .replacingOccurrences(of: " ", with: "_")
+            .replacingOccurrences(of: "-", with: "_")
+            .replacingOccurrences(of: specialChar, with: "_")
             ?? self
         return lower ? processed.lowercased() : processed.uppercased()
     }
@@ -59,7 +61,7 @@ extension String {
     private func processCamelCaseRegex(pattern: String) -> String? {
         let regex = try? NSRegularExpression(pattern: pattern, options: [])
         let range = NSRange(location: 0, length: count)
-        return regex?.stringByReplacingMatches(in: self, options: [], range: range, withTemplate: "$1_$2")
+        return regex?.stringByReplacingMatches(in: self, options: [], range: range, withTemplate: "$1\(specialChar)$2")
     }
 }
 
@@ -70,6 +72,8 @@ extension String {
             return camelCased(with: "_")
         } else if contains("-") {
             return camelCased(with: "-")
+        } else if contains(" ") {
+            return camelCased(with: " ")
         } else {
             return self
         }
@@ -83,3 +87,6 @@ extension String {
             .joined()
     }
 }
+
+
+let snake_case = "snake_case"
